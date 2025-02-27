@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: rgb(41, 40, 40);
+    margin: 0px 250px 0px;
+}
+
+.hero {
+    position: relative;
+    flex: 1;
+    background-image: url('../img/trees-and-sky\ .jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+ /* .hero figure {
+    position: relative;
+    /* z-index: 2;
+}  */
+
+.Norse {
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.123);
+}
+
+.icon {
+    flex: auto;
+}
+
+.container {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    /* margin: 20px; */
+}
+
+
+.content{
+    padding-left:0;
+    padding-right: 0%;
+    background-color: #e0e0e0;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content__text {
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    padding: 20px 20px;
+    
+}
+
+.content__form {
+    background-color: #ffffff;
+    /* box-shadow: 5 px rgb(2, 2, 2); */
+    padding: 25px 25px;
+    box-shadow:0 4px 6px rgb(14, 14, 14,0.1),0 4px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+    
+}
+/*  
+.hero img {
+    display: none; 
+}
+
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+
+
+
+div p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.login__p {
+    margin-bottom: 15px;
+}
+
+.login__lable {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.login__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.login__btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.login__btn:hover {
+    background-color: #0056b3;
+}
+
+.switch {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.switch a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.switch a:hover {
+    text-decoration: underline;
+} */
