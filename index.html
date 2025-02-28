@@ -4,72 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up</title>
-    <link rel="stylesheet" href="css/styles.css">
-    
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
-    <div class=" hero 
-container">
-            
-            <div class="Norse">
-                <img class="icon" src="img/odin-lined.png" alt="trees and sky" width="100" height="100">
-                <!-- <figcaption> </figcaption> -->
-                <p class="icon"><strong>ODIN</strong></p>
-            </div>
-        
+    <!-- Hero Section: Contains the background image and the ODIN logo/text -->
+    <div class="hero container">
+        <div class="Norse">
+            <!-- ODIN Logo -->
+            <img class="icon" src="img/odin-lined.png" alt="Odin Logo" width="100" height="100">
+            <!-- ODIN Text -->
+            <p class="icon"><strong>ODIN</strong></p>
+        </div>
     </div>
 
+    <!-- Content Section: Contains the text and the form -->
     <div class="content">
+        <!-- Text Content -->
         <div class="content__text">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente voluptate similique aspernatur, esse consequatur rem provident culpa ea eum ipsam inventore architecto placeat quae perferendis, dolores, dolor id vitae dolore!</p>
         </div>
-    
 
-    <!-- article for form -->
+        <!-- Form Section -->
         <div class="content__form">
             <form action="" method="post">
                 <fieldset>
-                    <legend>Let's do this!</legend>
-                        <p class="login__p">
-                            <label class="login__lable" for="firstName">First Name</label>
-                            <input class="login__input" type="text" name="firstName" id="firstName" required placeholder="Loki">
-                        </p>
+                    <legend>Let's do this!</legend> <!-- Form Title -->
 
-                        <p class="login__p">
-                            <label class="login__lable" for="lastName">Last Name</label>
-                            <input class="login__input" type="text" name="lastName" id="lastName" required placeholder="Thorson">
-                        </p>
+                    <!-- First Name Input -->
+                    <p class="login__p">
+                        <label class="login__lable" for="firstName">First Name</label>
+                        <input class="login__input" type="text" name="firstName" id="firstName" required placeholder="Loki">
+                    </p>
 
-                        <p class="login__p">
-                            <label class="login__lable" for="email">Email</label>
-                            <input class="login__input" type="email" name="email" id="email" required pattern=".+@example\.com">
-                        </p>
+                    <!-- Last Name Input -->
+                    <p class="login__p">
+                        <label class="login__lable" for="lastName">Last Name</label>
+                        <input class="login__input" type="text" name="lastName" id="lastName" required placeholder="Thorson">
+                    </p>
 
-                        <p class="login__p">
-                            <label class="login__lable" for="phone">Phone Number</label>
-                            <input class="login__input" type="tel" name="phone" id="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                        </p>
+                    <!-- Email Input -->
+                    <p class="login__p">
+                        <label class="login__lable" for="email">Email</label>
+                        <input class="login__input" type="email" name="email" id="email" required pattern=".+@example\.com">
+                    </p>
 
-                        <p class="login__p"><label class="login__lable" for="password">Password (8 characters minimum):</label>
-                            <input class="login__input" type="password" name="password" id="password" required minlength="8">
+                    <!-- Phone Number Input -->
+                    <p class="login__p">
+                        <label class="login__lable" for="phone">Phone Number</label>
+                        <input class="login__input" type="tel" name="phone" id="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </p>
 
-                        </p>
+                    <!-- Password Input -->
+                    <p class="login__p">
+                        <label class="login__lable" for="password">Password (8 characters minimum):</label>
+                        <input class="login__input" type="password" name="password" id="password" required minlength="8">
+                    </p>
 
-                        <p class="login__p"><label class="login__lable" for="password__2">Confirm Password</label>
-                            <input class="login__input" type="password" name="password__2" id="password__2" required minlength="8">
-
-                        </p>
-                    
-
+                    <!-- Confirm Password Input -->
+                    <p class="login__p">
+                        <label class="login__lable" for="password__2">Confirm Password</label>
+                        <input class="login__input" type="password" name="password__2" id="password__2" required minlength="8">
+                    </p>
                 </fieldset>
-               
-                
             </form>
         </div>
-        <button class="login__btn" type="submit"> Create Account</button>
 
+        <!-- Create Account Button -->
+        <button class="login__btn" type="submit">Create Account</button>
+
+        <!-- Login Link for Existing Users -->
         <div class="switch">
-            <p>Already have an account ? <a href="#">Log in</a></p>
+            <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
 </body>

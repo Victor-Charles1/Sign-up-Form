@@ -1,164 +1,152 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
     display: flex;
     min-height: 100vh;
     background-color: rgb(41, 40, 40);
-    margin: 0px 20% 0px;
+    margin: 0px 20% 0px; /* Adds horizontal margin */
 }
 
+/* Hero Section: Background Image and Logo */
 .hero {
     position: relative;
-    flex: 1;
-    background-image: url('../img/trees-and-sky\ .jpg');
-    background-size: cover;
-    background-position: center;
+    flex: 1; /* Takes up 1/4 of the body horizontally */
+    background-image: url('../img/trees-and-sky .jpg'); /* Background image */
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image */
     display: flex;
-    /* justify-content: center; */
-    align-items: center;
+    align-items: center; /* Vertically centers content */
     color: white;
     text-align: center;
 }
 
- /* .hero figure {
-    position: relative;
-    /* z-index: 2;
-}  */
-
+/* Norse Section: Contains the ODIN logo and text */
 .Norse {
     display: flex;
     font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.123);
+    background-color: rgba(0, 0, 0, 0.123); /* Semi-transparent background */
 }
 
+/* Icon Styling: ODIN logo and text */
 .icon {
-    flex: auto;
+    flex: auto; /* Allows the icon to grow and shrink as needed */
 }
 
+/* Container Styling: Wrapper for the form and content */
 .container {
     padding: 20px;
     background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
-    /* margin: 20px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
-
-.content{
-    padding-left:0;
-    padding-right: 0%;
-    background-color: #e0e0e0;
-    flex: 2;
+/* Content Section: Contains text and form */
+.content {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #e0e0e0; /* Light gray background */
+    flex: 2; /* Takes up 3/4 of the body horizontally */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; /* Centers content vertically */
 }
 
+/* Text Content Styling */
 .content__text {
     margin-bottom: 20px;
     font-size: 1.25rem;
-    padding: 20px 20px;
-    
+    padding: 20px 20px; /* Adds padding around the text */
 }
 
+/* Form Content Styling */
 .content__form {
-    background-color: #ffffff;
-    /* box-shadow: 5 px rgb(2, 2, 2); */
-    padding: 25px 25px;
-    box-shadow:0 4px 6px rgb(14, 14, 14,0.1),0 4px 0 rgba(0, 0, 0, 0.1);
-
+    background-color: #ffffff; /* White background for the form */
+    padding: 25px 25px; /* Adds padding inside the form */
+    box-shadow: 0 4px 6px rgba(14, 14, 14, 0.1), 0 4px 0 rgba(0, 0, 0, 0.1); /* Adds shadow */
 }
 
+/* Fieldset Styling: Groups form inputs */
 fieldset {
-    border: none;
+    border: none; /* Removes default border */
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    /* grid-template-areas: 
-    "header header"
-    "first  last"
-    "email  phone"
-    "pass1   pass2"; */  
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout for form inputs */
 }
 
+/* Form Paragraph Styling: Wraps each input and label */
 .login__p {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Adds space between form fields */
 }
 
+/* Label Styling */
 .login__lable {
     display: block;
     font-size: 0.9rem;
-    color: #555;
-    margin-bottom: 5px;
+    color: #555; /* Dark gray color for labels */
+    margin-bottom: 5px; /* Adds space between label and input */
 }
 
+/* Input Field Styling */
 .login__input {
-    width: 80%;
+    width: 80%; /* Limits input width */
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
     font-size: 1rem;
 }
 
+/* Legend Styling: Form title */
 legend {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adds space below the title */
 }
 
-
-/* create account button */
-.login__btn { 
-    width: 40%;
+/* Create Account Button Styling */
+.login__btn {
+    width: 40%; /* Button width */
     padding: 10px;
-    background-color: #596D48;
-    color: white;
+    background-color: #596D48; /* Green background */
+    color: white; /* White text */
     border: none;
-    border-radius: 4px;
+    border-radius: 4px; /* Rounded corners */
     font-size: 1rem;
-    cursor: pointer;
-    margin: 25px;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    margin: 25px; /* Adds margin around the button */
 }
 
 .login__btn:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue on hover */
 }
-/* ---- */
 
+/* Switch Section: Login link for existing users */
 .switch {
-    margin: 25px;
+    margin: 25px; /* Adds margin around the link */
     font-size: 0.9rem;
 }
 
 .switch a {
-    color: #596D48;
-    text-decoration: none;
+    color: #596D48; /* Green color for the link */
+    text-decoration: none; /* Removes underline */
 }
 
 .switch a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Adds underline on hover */
 }
 
-#email:invalid {
-    border-color: red;
-}
-
-#phone:invalid {
-    border-color: red;
-}
-
-#password:invalid {
-    border-color: red;
-}
+/* Input Validation Styling */
+#email:invalid,
+#phone:invalid,
+#password:invalid,
 #password__2:invalid {
-    border-color: red;
+    border-color: red; /* Red border for invalid inputs */
 }
-
 
