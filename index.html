@@ -29,30 +29,37 @@ container">
         <div class="content__form">
             <form action="" method="post">
                 <fieldset>
-                    <legend>Let's do This</legend>
-                    <p class="login__p">
-                        <label class="login__lable" for="firstName">First Name</label>
-                        <input class="login__input" type="text" name="firstName" id="firstName" required placeholder="Loki">
-                    </p>
+                    <legend>Let's do this!</legend>
+                        <p class="login__p">
+                            <label class="login__lable" for="firstName">First Name</label>
+                            <input class="login__input" type="text" name="firstName" id="firstName" required placeholder="Loki">
+                        </p>
 
-                    <p class="login__p">
-                        <label class="login__lable" for="lastName">Last Name</label>
-                        <input class="login__input" type="text" name="lastName" id="lastName" required placeholder="Thorson">
-                    </p>
+                        <p class="login__p">
+                            <label class="login__lable" for="lastName">Last Name</label>
+                            <input class="login__input" type="text" name="lastName" id="lastName" required placeholder="Thorson">
+                        </p>
 
-                    <p class="login__p">
-                        <label class="login__lable" for="email">Email</label>
-                        <input class="login__input" type="email" name="email" id="email" required>
-                    </p>
+                        <p class="login__p">
+                            <label class="login__lable" for="email">Email</label>
+                            <input class="login__input" type="email" name="email" id="email" required pattern=".+@example\.com">
+                        </p>
 
-                    <p class="login__p">
-                        <label class="login__lable" for="phone">Phone Number</label>
-                        <input class="login__input" type="email" name="email" id="email" required>
-                    </p>
+                        <p class="login__p">
+                            <label class="login__lable" for="phone">Phone Number</label>
+                            <input class="login__input" type="tel" name="phone" id="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        </p>
 
-                    <p class="login__p"><label class="login__lable" for="email">Email</label>
-                        <input class="login__input" type="email" name="email" id="email" required></p>
-                    <p class="login__p"></p>
+                        <p class="login__p"><label class="login__lable" for="password">Password</label>
+                            <input class="login__input" type="password" name="password" id="password" required>
+
+                        </p>
+
+                        <p class="login__p"><label class="login__lable" for="password__2">Confirm Password</label>
+                            <input class="login__input" type="password" name="password__2" id="password__2" required>
+
+                        </p>
+                    
 
                 </fieldset>
                
