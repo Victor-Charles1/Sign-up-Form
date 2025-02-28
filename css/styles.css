@@ -114,8 +114,8 @@ legend {
 }
 
 
-
-.login__btn {
+/* create account button */
+.login__btn { 
     width: 40%;
     padding: 10px;
     background-color: #596D48;
@@ -127,16 +127,15 @@ legend {
     margin: 25px;
 }
 
+.login__btn:hover {
+    background-color: #0056b3;
+}
+/* ---- */
+
 .switch {
     margin: 25px;
     font-size: 0.9rem;
 }
-
-.login__btn:hover {
-    background-color: #0056b3;
-}
-
-
 
 .switch a {
     color: #596D48;
@@ -147,5 +146,19 @@ legend {
     text-decoration: underline;
 }
 
+#email:invalid {
+    border-color: red;
+}
+
+#phone:invalid {
+    border-color: red;
+}
+
+#password:invalid {
+    border-color: red;
+}
+#password__2:invalid {
+    border-color: red;
+}
 
 
